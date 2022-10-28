@@ -1,0 +1,123 @@
+html{
+    background-color: #121212;
+    color: white;
+    font-size: 1.2rem;
+    font-family: Arial;
+}
+
+.hijo{
+    width: fit-content;
+    padding: 3rem;
+    margin:0 auto;
+    text-align: center;
+}
+
+input{
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    outline: none !important;
+    padding: 0.5rem;
+    border:0.1rem solid #F0E69C;
+    border-radius: 1rem;
+    color: #F0E68C;
+    transition: 0.3s;
+}
+
+input:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+input:focus{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 0.1rem solid white;
+}
+
+button{
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    outline: none !important;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border:0.2rem solid white;
+    border-radius: 1rem;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    border:0.2rem solid #F0E69C;
+    color: #F0E68C;
+}
+
+button:active{
+    background-color: #F0E68C;
+    border:0.2rem solid white;
+    color: #121212;
+    
+}
+
+a{
+    color: white;
+}
+
+a:visited{
+    color: #F0E68C;
+}
+
+textarea{
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    outline: none !important;
+    padding: 0.5rem;
+    border:0.1rem solid #F0E69C;
+    border-radius: 1rem;
+    color: #F0E68C;
+    transition: 0.3s;
+    width: 15rem;
+    height: 9rem;
+}
+
+textarea:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+textarea:focus{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 0.1rem solid white;
+}
+
+table{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+td{
+    padding-left: 2rem;
+}
+
+.header{
+    background-color: #DAA520;
+}
+
+.bonger{
+    width: 7rem;
+}
+
+.bonger:hover{
+    width: 9rem;
+}
+
+.bonger:focus{
+    width: 9rem;
+}
+
+.active{
+    columns: yellow;
+}
