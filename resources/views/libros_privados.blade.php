@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Libros</title>
     <link rel="stylesheet" href="/css/app.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
 
@@ -26,6 +27,8 @@
             <button>Guardar</button>
         </form>
     </div>
+
+    <button onclick="alerta()">Pija</button>
 
     <table>
         <header>

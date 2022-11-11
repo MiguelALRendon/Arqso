@@ -27,6 +27,22 @@
         <tr>
     </header>
 
+    @foreach ($data as $libro)
+        <tr>
+            <td> {{$libro['LibroNombre']}} </td>
+            <td> {{$libro['LibroDescripcion']}} </td>
+            <td> {{$libro['LibroGenero']}} </td>
+            <td><a href=" {{route('editarP', $libro->LibroId)}} ">Editar</a></td>
+            <td>
+                <form method="POST", action="{{route('borrarP', $libro->LibroId)}}">
+                    @csrf
+                    @method('delete')
+                    <button type="submit">Eliminar</button>
+                </form>
+            </td>
+        </tr>
+    @endforeach
+
 </table>
 </body>
 </html>

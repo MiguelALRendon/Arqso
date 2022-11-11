@@ -18,15 +18,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [homeController::class, 'index']);
 Route::get('/register', [homeController::class, 'register']);
 
+Route::post('login', [homeController::class, 'login']);
+Route::post('registrar', [homeController::class, 'registrar']);
+
 Route::get('/librosP', [librosController::class, 'privados_index']);
 Route::get('/librosP/{id}', [librosController::class, 'editar'])->name('editarL');
 
 Route::get('/librosA', [librosController::class, 'publicos_index']);
-
-Route::post('login', [homeController::class, 'login']);
-Route::post('registrar', [homeController::class, 'registrar']);
+Route::get('/librosA/{id}', [librosController::class, 'editarPublico'])->name('editarP');
 
 Route::post('/newbook', [librosController::class, 'create']);
 Route::post('/editarL', [librosController::class, 'editarlibro']);
 
 route::delete('/librosP/{id}', [librosController::class, 'borrarlibro'])->name('borrarL');
+route::delete('/librosA/{id}', [librosController::class, 'borrarPublico'])->name('borrarP');

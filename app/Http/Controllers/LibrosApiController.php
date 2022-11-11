@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\LibroModel;
+use App\Models\ViewModels\Libros2;
 use Illuminate\Http\Request;
 
 class LibrosApiController extends Controller
@@ -14,8 +14,8 @@ class LibrosApiController extends Controller
      */
     public function index()
     {
-        $libro = LibroModel::all();
-        return \response($libro);
+        $libro = Libros2::all();
+        return ($libro);
     }
 
     public function apirest(){
